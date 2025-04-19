@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header> 
+        <h1 id="top">George Hernandez</h1>
+        <img src="image/4.jpg" alt="Photo of George Hernandez" width="150">
+        <p><strong>Email:</strong> <a href="mailto:ghernandez0758qc@student.fatima.edu.ph">ghernandez0758qc@student.fatima.edu.ph</a> | Phone: 0991-2122-980</p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/wegonbeayt" target="_blank">wegonbeayt</a></p>
+        <p><strong>Address:</strong> Commonwealth, Quezon City</p> 
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Summary (Moved Below Navigation) -->
+    <section id="summary">
+        <h2>Summary</h2>
+        <p>A second-year student at Our Lady of Fatima University</p>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences">
+        <h2>Experience</h2>
+        <article>
+            <p><strong>Game Development</strong></p>
+            <p>Rockstar Games, Inc. | 2067 - Future</p>
+            <ul> 
+                <li>Game Artist (Visuals & Animation)</li>
+                <li>Game Designer (Creative & Mechanics)</li>
+            </ul>
+        </article>
+
+        <article>
+            <p><strong>Artificial Intelligence & Machine Learning</strong></p>
+            <p>OpenAI, Inc. | 2087 - Future</p>
+            <ul> 
+                <li>Data Scientist</li>
+                <li>Research Engineer</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul> 
+            <li>Communication</li>
+            <li>Time management</li> 
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <p><strong>Major in Game Design and Development</strong></p>
+        <ul>
+            <li>DICT | December 22, 2024</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <article>
+            <p><strong>HUMANITIES AND SOCIAL SCIENCES</strong></p>
+            <ul>
+                <li>Commonwealth High School | 2016-2020</li>
+            </ul>
+        </article>
+
+        <article>
+            <p><strong>Bachelor of Science in Information Technology</strong></p>
+            <ul>
+                <li>Our Lady of Fatima University | 2024-2026</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Media</h2>
+
+        <!-- Images -->
+        <article> 
+            <h3>Trainings</h3>
+            <img src="image/4.jpg" alt="Training Image 1" width="150">
+            <img src="image/3.jpg" alt="Training Image 2" width="150">
+            <img src="image/5.jpg" alt="Training Image 3" width="150">
+        </article>
+
+        <!-- Video -->
+        <article>
+            <h3>Introduction Video</h3>
+            <video controls width="600" poster="images/poster.png">
+                <source src="video/opening.mp4" type="video/mp4">
+                <p>Your browser does not support video playback. <a href="video/opening.mp4">Download the video</a>.</p>
+            </video>
+        </article>    
+
+        <!-- Audio -->
+        <article>
+            <h3>Audio Introduction</h3>
+            <audio controls>
+                <source src="audio/QUIX.mp3" type="audio/mpeg">
+                <p>Your browser does not support audio playback. <a href="audio/QUIX.mp3">Download the audio</a>.</p>
+            </audio>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+
+</body>
+</html>

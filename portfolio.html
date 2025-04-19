@@ -1,0 +1,244 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    nav li {
+        margin: 0 15px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    section {
+        padding: 20px;
+        background: white;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
+    }
+    footer a {
+        color: #ff6600;
+        text-decoration: none;
+    }
+
+    /* Contact Form Styling */
+    form {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: auto;
+    }
+    fieldset {
+        border: none;
+    }
+    legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #333;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    input, textarea, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    textarea {
+        resize: none;
+    }
+
+    /* Button Styling */
+    button {
+        width: 48%;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    button[type="reset"] {
+        background-color: #dc3545;
+        color: white;
+    }
+    button[type="reset"]:hover {
+        background-color: #a71d2a;
+    }
+</style>
+
+
+
+    <!--header-->
+    <header> 
+        <h1 id="top">George Hernandez</h1>
+        <img src="image/4.jpg" alt="Photo of George Hernandez" width="150">
+        <p><strong>Email:</strong> <a href="ghernandez0758qc@student.fatima.edu.ph">ghernandez0758qc@student.fatima.edu.ph</a> | Phone: 0991-2122-980</p>
+        <p><strong>Facebook:</strong> <a href="https://Facebook.com/wegonbeayt" target="_blank">wegonbeayt</a></p>
+        <p><strong>Address:</strong> Commonwealth, Quezon City</p> 
+    </header>
+
+     
+    
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#media">Media</a></li>
+            <li><a href="index.html" target="_blank">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+        <!--Media -->
+    <section id="media">
+        <h2>Media</h2>
+
+    <!--Image-->
+    <article> 
+        <h3>Trainings</h3>
+        <img src="image/4.jpg" alt="Photo of George Hernandez" width="150">
+        <img src="image/3.jpg" alt="Photo of George Hernandez" width="150">
+        <img src="image/5.jpg" alt="Photo of George Hernandez" width="150">
+    </article>
+
+    <!--Video-->
+    <article>
+        <h3>Introduction Video</h3>
+        <video controls width="600" poster="images/poster.png">
+            <source src="video/opening.mp4" type="video/mp4">
+            <p>Your browser does not support video playback. <a href="video/opening.mp4">Download the video</a>.</p>
+        </video>
+    </article>    
+
+    <!--Audio-->
+    <article>
+        <h3>Audio Introduction</h3>
+        <audio controls>
+            <source src="audio/QUIX.mp3" type="audio/mpeg">
+            <p>Your browser does not support audio playback. <a href="audio/QUIX.mp3">Download the audio</a>.</p>
+        </audio>
+    </article>
+</section>
+
+
+
+
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    If you have any question or project inquiries. feel free to send me a message.
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Details</legend>
+            
+            <label for="fullname">Full Name:</label><br/>
+            <input type="text" id="fullname" name="fullname"/><br/><br/>
+            
+            <label for="email">Email Adress:</label><br/>
+            <input type="text" id="email" name="email"/><br/><br/>
+            
+            <label for="phone">Phone Number:</label><br/>
+            <input type="text" id="phone" name="phone"/><br/><br/>
+            
+            <p>Your Message:</p>
+            <textarea name="message" cols="20" rows="4" placeholder="Enter your message..."></textarea><br/><br/>
+            
+            <p>Inquiry Type:</p>
+            <select name="inquiry">
+                <option value="general inquiry">General Inquiry</option>
+                <option value="project proposal">Project Proposal</option>
+                <option value="collaboration">Collaboration</option>
+            </select><br/><br/>
+            
+            <!-- Buttons -->
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear Form</button>
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <a href="index.html">
+        <button class="resume-button">Back to Resume</button>
+    </a>
+</footer>
+
+<style>
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
+    }
+    .resume-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .resume-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
